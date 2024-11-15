@@ -45,3 +45,9 @@ def verify_otp(request, user_id):
     else:
         form = OTPVerificationForm()
     return render(request, 'authentification/verify_otp.html', {'form': form})
+
+#goubexlv login
+
+def login(request):
+    
+    return render(request, 'authentification/login.html')
